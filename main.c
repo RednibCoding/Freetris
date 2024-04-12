@@ -586,6 +586,7 @@ int main(int argc, char **argv)
         }
     }
 
+    free(field);
     kit_destroy(ctx);
     return 0;
 }
