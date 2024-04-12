@@ -21,7 +21,7 @@ REM Debug build
 @REM  %COMPILER% %SRC_FILES% %RES_FILES% -o %OUTPUT_FILE_NAME% -std=c99
 
 REM Release build
-%COMPILER% %SRC_FILES% %RES_FILES% -o %OUTPUT_FILE_NAME% -lgdi32 -luser32 -lwinmm -O3 -Wall -s -std=c99 -fno-strict-aliasing -fomit-frame-pointer -flto
+%COMPILER% %SRC_FILES% %RES_FILES% -o %OUTPUT_FILE_NAME% -lgdi32 -luser32 -lwinmm -mwindows -O3 -Wall -s -std=c99 -fno-strict-aliasing -fomit-frame-pointer -flto
 
 if %ERRORLEVEL% NEQ 0 (
     echo Compilation failed.
